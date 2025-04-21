@@ -71,7 +71,7 @@ class _BridgePyS(Node):
         self.get_logger().info(f"Created publisher for topic[{topic_name}]")
 
 async def spin_once(aNode):
-    rclpy.spin_once(aNode, timeout_sec=0)
+    rclpy.spin_once(aNode, timeout_sec=0.01)
 
 
 async def ros_run(aNode):
